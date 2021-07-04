@@ -8,7 +8,7 @@ const changeBackgroundColorReducer = (state = initialState, action) => {
       return {
         ...state,
 
-        state: state.backgroundColor == 'green',
+        state: state,
       };
     default:
       return state;
