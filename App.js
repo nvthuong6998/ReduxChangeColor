@@ -1,12 +1,13 @@
-import React from 'react'
-import { View, Text } from 'react-native'
-import ChangeBackground from './ChangeBackgroundColor/ChangeBackground'
+import React from 'react';
+import {View, Text} from 'react-native';
+import ChangeBackground from './ChangeBackgroundColor/ChangeBackground';
+import rootReducers from './rootReducers';
 const App = () => {
   return (
     <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
       <ChangeBackground />
     </View>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -1,19 +1,18 @@
-import { CHANGE_BACKGROUND_COLOR } from "./ChangeBackground.type";
+import {CHANGE_BACKGROUND_COLOR} from './ChangeBackground.type';
 
-const initialState = [
-    {backgroundColor: 'red'}
-]
+const initialState = [{backgroundColor: 'red'}];
 
 const changeBackgroundColorReducer = (state = initialState, action) => {
-    switch(action.type){
-        case CHANGE_BACKGROUND_COLOR:
-            return{
-                ...state,
+  switch (action.type) {
+    case CHANGE_BACKGROUND_COLOR:
+      return {
+        ...state,
 
-            }
-        default:
-            return state;
-    }
-}
+        state: state.backgroundColor == 'green',
+      };
+    default:
+      return state;
+  }
+};
 
-export {changeBackgroundColorReducer}
+export {changeBackgroundColorReducer};

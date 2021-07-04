@@ -1,8 +1,8 @@
-import { combineReducers } from "redux";
-import { changeBackgroundColorReducer } from "./ChangeBackgroundColor/ChangeBackground.reducer";
+import {combineReducers} from 'redux';
+import {changeBackgroundColorReducer} from './ChangeBackgroundColor/ChangeBackground.reducer';
 
 const rootReducers = combineReducers({
-    changeBackgroundColorReducer
+  changeBackgroundColorReducer,
 });
 
 export default rootReducers;
